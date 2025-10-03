@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pentad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Simple styles for the login page button */
+        .login-container { text-align: center; padding: 20px; }
+        .google-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            gap: 15px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: box-shadow .3s ease;
+        }
+        .google-btn:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .google-btn img { width: 20px; height: 20px; }
+    </style>
+</head>
+<body>
+    <div class="welcome-screen">
+        <div class="login-container">
+            <img src="{{ url_for('static', filename='Gemini_Generated_Image_8xh9yc8xh9yc8xh9.png') }}" alt="AI Chat Logo" class="logo" style="width: 100px; margin-bottom: 20px;">
+            <h1>Welcome to Pentad</h1>
+            <p class="subtitle">Please sign in to continue</p>
+            <a href="/auth" class="google-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google icon"/>
+                <span>Sign in with Google</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
